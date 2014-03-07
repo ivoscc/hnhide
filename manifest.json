@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "HN Reply Hide",
+  "description": "Hide reply comments on HN threads",
+  "version": "0.1",
+
+  "permissions": [
+    "https://news.ycombinator.com/item*"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["https://news.ycombinator.com/item*"],
+      "js": ["script.js"]
+    }
+    ]
+}
